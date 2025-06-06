@@ -1,0 +1,105 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "ComenzarTestIntent",
+          "samples": [
+            "comenzar test"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "palabrasRecordadas",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "ResponderMemoriaIntent",
+          "samples": [
+            "palabras {palabrasRecordadas}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "CancelAndStopIntent",
+          "samples": [
+            "cancela"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "fechaNombrada",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "ResponderFechaIntent",
+          "samples": [
+            "fecha  {fechaNombrada}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "animalesNombrados",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "ResponderAnimalesIntent",
+          "samples": [
+            "animales {animalesNombrados}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "numeroDocumento",
+              "type": "AMAZON.AlphaNumeric"
+            }
+          ],
+          "name": "SolicitarDocumentoIntent",
+          "samples": [
+            "mi identificación es {numeroDocumento}",
+            "mi cédula es {numeroDocumento}",
+            "es {numeroDocumento}",
+            "mi documento es {numeroDocumento}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "nombreUsuario",
+              "type": "AMAZON.Person"
+            }
+          ],
+          "name": "SolicitarNombreIntent",
+          "samples": [
+            "es {nombreUsuario}",
+            "me llamo {nombreUsuario}",
+            "mi nombre es {nombreUsuario}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "moca blind"
+    }
+  }
+}
